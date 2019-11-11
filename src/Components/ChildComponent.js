@@ -1,11 +1,16 @@
 import React from 'React';
-import { View , Text, StyleSheet } from 'react-native';
+import { View , Text, StyleSheet, Image } from 'react-native';
 
 
-const ChildComponent = () => {
+const ChildComponent = parentData => {
+    console.log(parentData,'propes');
     return (
-        <Text>Abcd</Text>
-    ) 
+        <View>
+        <Image source={parentData.imageSource}/>
+        <Text>{parentData.title}</Text>
+        <Text>Image Score - {parentData.Score}</Text>
+        </View>
+    )
 }
 
 const style = StyleSheet.create({

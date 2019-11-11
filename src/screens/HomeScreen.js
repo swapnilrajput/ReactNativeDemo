@@ -13,15 +13,17 @@ const HomeScreen = ({navigation}) => {
       <Text style={styles.text}>HomeScreen Changes</Text>
       <Button 
       style = {style.spacing}
-      onPress = {()=> navigation.navigate('ArrayOfObjects')}
-      title="Go to Components"/>
+        onPress = {()=> navigation.navigate('ArrayOfObjects')}
+          title="Go to Components"/>
       <Button 
-      onPress = {()=> navigation.navigate('Component')}
-      title="Changes"/>
+        onPress = {()=> navigation.navigate('Component')}
+          title="Changes"/>
       <Button 
-      onPress = {()=> navigation.navigate('ParentComponent')}
-      title="ParentChild"/>
-      <TouchableOpacity onPress= {(press)=> console.log('list pressed')}>
+        onPress = {()=> navigation.navigate('ParentComponent')}
+          title="ParentChild"/>
+      <TouchableOpacity 
+        onPress= {(press)=> 
+          console.log('list pressed')}>
         <Text>Go to list demo</Text>
       </TouchableOpacity>
     </View>

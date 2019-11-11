@@ -15,9 +15,18 @@ const ArrayOfObjects = () => {
             marginVertical:50
         }
     })
+
+    const newStyle = StyleSheet.create({
+        data: {
+            padding:1,
+            marginHorizontal:3
+        }
+    });
+
     return (
             <FlatList 
             horizontal 
+            style={newStyle.data}
             showsHorizontalScrollIndicator = {false}
                 data ={array_names} 
                     keyExtractor = {(allKeys)=> allKeys.name}

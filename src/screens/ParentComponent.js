@@ -5,9 +5,19 @@ import ChildComponent from '../Components/ChildComponent';
 const ParentComponent = () => {
     return (
         <View>
-            <ChildComponent/>
-            <ChildComponent/>
-        </View>
+            <ChildComponent 
+                title ="beach" 
+                    imageSource={require('../../assets/beach.jpg')}
+                        Score ="9"/>
+            <ChildComponent 
+                title ="forest" 
+                    imageSource={require('../../assets/forest.jpg')}
+                        Score ="7"/>
+            <ChildComponent 
+                title ="forest" 
+                    imageSource={require('../../assets/mountain.jpg')}
+                        Score ="4"/>
+        </View >
      )
 };
 
