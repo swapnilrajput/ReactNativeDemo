@@ -21,6 +21,9 @@ const HomeScreen = ({navigation}) => {
       <Button 
         onPress = {()=> navigation.navigate('ParentComponent')}
           title="ParentChild"/>
+      <Button 
+        onPress = {()=> navigation.navigate('StateManagement')}
+          title="StateManagement"/>
       <TouchableOpacity 
         onPress= {(press)=> 
           console.log('list pressed')}>

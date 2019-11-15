@@ -4,6 +4,7 @@ import ComponentsScreen from './src/screens/ComponentsScreen';
 import ArrayOfObjects from './src/screens/ArrayOfObjects';
 import GoalExercise from './src/screens/GoalExercise';
 import ParentComponent from './src/screens/ParentComponent';
+import StateManagement from './src/screens/StateManagement';
 
 const navigator = createStackNavigator(
   {
@@ -11,7 +12,8 @@ const navigator = createStackNavigator(
     Component :ComponentsScreen,
     ArrayOfObjects : ArrayOfObjects,
     GoalExercise: GoalExercise,
-    ParentComponent : ParentComponent
+    ParentComponent : ParentComponent,
+    StateManagement : StateManagement
   },
   {
     initialRouteName: 'Home',
